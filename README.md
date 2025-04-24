@@ -1,1 +1,1 @@
-# Blog-api
+Solvit assignment 2 : Shyaka Thierry, Mutoni Chadia

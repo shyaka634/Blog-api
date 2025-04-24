@@ -12,7 +12,7 @@ import ownerCheck from '../middleware/ownerCheck.js';
 
 const router = express.Router();
 
-router.post('/', auth, roleCheck('author'), createBlog);
+router.post('/', createBlog);
 router.get('/', getBlogs);
 router.get('/:id', getBlog);
 router.put('/:id', auth, ownerCheck, updateBlog);

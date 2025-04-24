@@ -5,7 +5,7 @@ import roleCheck from '../middleware/roleCheck.js';
 
 const router = express.Router();
 
-router.post('/', auth, roleCheck('admin'), createCategory);
+router.post('/', createCategory);
 router.get('/', getCategories);
 
 export default router;

@@ -5,7 +5,7 @@ import roleCheck from '../middleware/roleCheck.js';
 
 const router = express.Router();
 
-router.get('/', auth, roleCheck('admin'), getUsers);
+router.get('/', getUsers);
 router.get('/:id', auth, getUser);
 
 export default router;
